@@ -9,7 +9,7 @@ pipeline {
         stage('Stage 2 - Run hello world') {
             steps {
                 sh 'python nsg.py'
-                archiveArtifacts artifacts: 'dist/test.zip'
+                echo "Will deploy"
             }
         }
     }
