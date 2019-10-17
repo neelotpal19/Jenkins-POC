@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Stage 2 - Run hello world') {
             steps {
-                sh 'python hello_world.py'
+                sh 'python nsg.py'
                 archiveArtifacts artifacts: 'dist/test.zip'
             }
         }
